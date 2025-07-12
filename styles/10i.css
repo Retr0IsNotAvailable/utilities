@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    font-family: Arial;
+}
+
+.calculation {
+    font-size: 45px;
+    color: white;
+    height: 51.5px;
+    margin: 15px 0 5px 0;
+}
+
+/*
+.js-empty-calculation {
+    height: 51.5px;
+}
+*/
+
+button {
+    color: white;
+    font-size: 26px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.grey-button {
+    background-color: rgb(51, 51, 51);
+}
+
+.orange-button {
+    background-color: rgb(254, 160, 10); 
+}
+
+.clear-button {
+    font-size: 17px;
+}
