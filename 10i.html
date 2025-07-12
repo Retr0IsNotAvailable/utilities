@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Calculator Final</title>
+
+        <link href="styles/10i.css" rel="stylesheet"/>
+        <link href="img/icons/calculator-ico.ico" type="image/x-icon" rel="icon"/>
+    </head>
+
+    <body>
+        <p class="js-calculation calculation"></p>
+        <p>
+            <button class="grey-button" onclick="
+                calculation = calculateValue(calculation, '1');
+                localStorage.setItem('calculation', calculation);
+            ">1</button>
+
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '2');
+            localStorage.setItem('calculation', calculation);
+        ">2</button>
+
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '3');
+            localStorage.setItem('calculation', calculation);
+        ">3</button>
+
+        <button class="orange-button" onclick="
+            calculation = calculateValue(calculation, ' + ');
+            localStorage.setItem('calculation', calculation);
+        ">+</button>
+        </p>
+
+        <p>
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '4');
+            localStorage.setItem('calculation', calculation);
+        ">4</button>
+
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '5');
+            localStorage.setItem('calculation', calculation);
+        ">5</button>
+
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '6');
+            localStorage.setItem('calculation', calculation);
+        ">6</button>
+
+        <button class="orange-button" onclick="
+            calculation = calculateValue(calculation, ' - ');
+            localStorage.setItem('calculation', calculation);
+        ">-</button>
+        </p>
+
+        <p>
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '7');
+            localStorage.setItem('calculation', calculation);
+        ">7</button>
+
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '8');
+            localStorage.setItem('calculation', calculation);
+        ">8</button>
+
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '9');
+            localStorage.setItem('calculation', calculation);
+        ">9</button>
+
+        <button class="orange-button" onclick="
+            calculation = calculateValue(calculation, ' * ');
+            localStorage.setItem('calculation', calculation);
+        ">*</button>
+        </p>
+
+        <p>
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '0');
+            localStorage.setItem('calculation', calculation);
+        ">0</button>
+
+        <button class="grey-button" onclick="
+            calculation = calculateValue(calculation, '.');
+            localStorage.setItem('calculation', calculation);
+        ">.</button>
+
+        <button class="grey-button" onclick="
+            // Note: eval() takes a string and runs it as code.
+            // Avoid using eval() in real world projects since
+            // it can potentially be given harmful code to run.
+            // Only use eval() for learning purposes.
+            calculation = eval(calculation);
+            displayCalculation(calculation);
+            localStorage.setItem('calculation', calculation);
+        ">=</button>
+
+        <button class="orange-button" onclick="
+            calculation = calculateValue(calculation, ' / ');
+            localStorage.setItem('calculation', calculation);
+        ">/</button>
+        </p>
+
+        <p>
+        <button class="grey-button clear-button" onclick="
+            calculation = '';
+            displayCalculation(calculation);
+            localStorage.setItem('calculation', calculation);
+        ">Clear</button>
+        </p>
+
+        <script src="scripts/10i.js"></script>
+  </body>
+</html>
